@@ -1,0 +1,196 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+
+/* navegador */
+
+.container-nav{
+ 
+    background: white;
+    width: 100%;
+    height: 9%;
+    position: fixed;
+
+} 
+
+hr{
+
+    height: 63.5px;
+    background-color: grey;
+    width: 85%;
+    margin: 0px auto;
+}
+.nav{
+    background-color: #f0ecde;
+    border-radius: 50px;
+     margin:10px  0px 0px 4%; 
+     width: 90%;
+     position: fixed;
+     
+
+}
+
+.nav ul li a{
+    text-decoration: none;
+    color: black;
+    
+}
+
+.nav ul li:hover {
+ background-color: #e7ddc1;
+}
+
+.nav ul li{
+    display:inline-block;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 50px;
+}
+
+/* navegador */
+
+
+/*-----------CAROUSEL ----------*/
+
+.carousel{
+    width: 95%;
+    margin: 0px auto;
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+
+
+.carousel-element img{
+    width: 250px;
+    border-radius: 33px;
+    height: 220px;
+    
+}
+
+.carousel-container{
+    position: relative;
+    
+    
+}
+
+.carousel-previus,.carousel-next{
+position: absolute;
+display: block;
+width: 30px;
+height: 30px;
+border: none;
+top: calc(50% - 195px);
+cursor: pointer;
+line-height: 30px;
+text-align: center;
+background: none;
+color: rgb(14, 14, 14);
+
+}
+
+.carousel-previus{
+    left: 2px;
+ 
+}
+
+.carousel-next{
+    right: 3px;
+
+}
+
+
+
+
+
+
+/*-----------CAROUSEL ----------*/
+
+
+
+
+
+/* container main */
+
+.container{
+    width: 55%;
+    height: 600px;
+    background: rgb(187, 75, 75);
+    margin: 0px auto;
+   
+}
+
+
+/* container left */
+
+.container-left{
+   
+    width: 20%;
+    height: 60%;
+    background: rgb(183, 216, 34);
+    display: flex;
+    position: fixed;
+    left: 0px;
+}
+
+/* container left */
+
+/* container left */
+
+.container-main{
+   
+    
+    background: rgb(6, 6, 143);
+    width: 80%;
+    height: 400px;
+    margin: 0px auto;
+   
+    
+
+}
+
+/* container left */
+
+/* container rigth */
+
+.container-rigth{
+    width: 20%;
+    height: 60%;
+    background: rgb(14, 148, 92);
+    display: flex;
+    right: 0px;
+    position: fixed;
+    top: 33%;
+
+
+
+}
+
+/* container rigth */
+
+.publication{
+   
+}
+
+.publication img{
+  width: 100%;
+
+  max-height: 30%;
+}
+
+/* adaptative*/
+
+@media(max-width: 800px){
+    
+   
+}
+
+@media(max-width: 500px){
+   
+}
+
+/* adaptative*/
+
+/* container main */
