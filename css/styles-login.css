@@ -4,22 +4,16 @@
     box-sizing: border-box;
 }
 
-
-.usuario{
-
-border-radius: 5px;
-}
-
-
-
 .container{
     background-color: #e7ddc1;
     width: 400px;
-    height: 550px;
+    height: 500px;
     border-radius: 15px;
-    margin: auto;
+    float: right;
+    margin-right: 300px;
     margin-top: 200px;
     padding: 20px 30px;
+    box-shadow: 1px 1px 10px 1px #888888;
     
     
 }
@@ -28,47 +22,107 @@ border-radius: 5px;
     height: 80px;
     width: 80px;
     border-radius: 50%;
+    display: flex;
+    margin: 0 auto;
 }
 
-.box {
-    border: 0.8px solid rgb(156, 156, 156);
-    width: 90%;
-    margin: 0 auto;
-    
-  }
+.container h5{
+    margin: 0;
+    text-align: center;
+    height: 30px;
+    margin-bottom: 20px;
+    margin-top: 5px;
+    font-size: 20px;
+}
+
 
 .control{
     width: 100%;
     border: 1px solid rgb(141, 141, 141);
     margin-bottom: 15px;
     padding: 11px 10px;
+    border-radius: 10px;
+    box-shadow: 5px 5px #888888;
 }
 
-.container a{
-    text-decoration: none;
-    color: azure;
-    
+.control:hover{
+    border: 1px solid rgb(0, 211, 248);
 }
-
-.container img{
-    display: flex;
-    margin: 0 auto;
-}
-
 
 .btninicio{
-    background-color: rgb(0, 146, 172);
+    background-color: rgb(4, 167, 196);
     padding: 10px 100px;
     border-radius: 5px;
     text-align: center;
+    width: 100%;
+    margin-bottom: 10px;
+    margin-top: 15px;
+    border: 1px solid #000;
 }
 
+.btninicio a{
+    text-decoration: none;
+    color: #000;
+}
+
+.container h4 a{
+    text-decoration: none;
+    color: rgb(2, 201, 201);
+}
+
+.container a:hover{
+    color: rgb(0, 175, 175);
+}
+.container h4{
+    margin: 0;
+    text-align: center;
+    height: 30px;
+    margin-top: 5px;
+    font-size: 15px;
+    
+}
+
+.box {
+
+    border: 1px solid rgb(156, 156, 156);
+    width: 95%;
+    margin: 0 auto;
+    
+  }
+
 .btncrear{
-    background-color: rgb(0, 146, 172);
+    background-color: rgb(4, 167, 196);
     padding: 10px 100px;
     border-radius: 5px;
     text-align: center;
-    
+    width: 100%;
+    margin-top: 15px;
+    border: 1px solid #000;
     
 }
-     
+
+
+.btninicio:hover,.btncrear:hover{
+    background-color:rgb(0, 93, 109) ;
+    
+}
+
+
+@media(max-width: 800px){
+    
+    .container{
+        background-color: #e7ddc1;
+        width: 400px;
+        height: 500px;
+        border-radius: 15px;
+        margin: 0 auto;
+        float: none;
+        margin-top: 200px;
+        box-shadow: 1px 1px 10px 1px #888888;
+        
+        
+    }
+   
+}
+
+
