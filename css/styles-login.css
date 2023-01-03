@@ -10,8 +10,8 @@
     height: 500px;
     border-radius: 15px;
     float: right;
-    margin-right: 300px;
-    margin-top: 200px;
+    margin-right: -410px;
+    margin-top: 250px;
     padding: 20px 30px;
     box-shadow: 1px 1px 10px 1px #888888;
     
@@ -109,7 +109,12 @@
 
 
 @media(max-width: 800px){
-    
+
+    .wrap{
+        display: none;
+    }
+  
+
     .container{
         background-color: #e7ddc1;
         width: 400px;
@@ -122,7 +127,55 @@
         
         
     }
-   
 }
 
 
+
+.wrap{
+    
+    width:90%;
+    max-width: 900px;
+    float: right;
+    margin-right: -200px;
+    margin-top: -5px; 
+}
+
+.widget{
+width: 40%;
+margin: 32px;
+
+}
+
+.widget p{
+    display: inline-block;
+    line-height: 1em;
+}
+
+.fecha{
+    /* font-family; oswald, Arial;*/
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 5px;
+    background: rgba(231, 221, 193,.6);
+    padding: 20px;
+    width: 100%;
+}
+
+.reloj{
+    /* font-family; oswald, Arial;*/
+    width: 100%;
+    padding: 20px;
+    font-size: 4em;
+    text-align: center;
+    background: rgba(231, 221, 193,.6);
+}
+
+.cajasegundos{
+    display: inline-block;
+}
+
+.reloj .segundos,
+.reloj .ampm{
+    font-size: 2rem;
+    display: block;
+}
