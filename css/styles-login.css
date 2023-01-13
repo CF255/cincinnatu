@@ -4,20 +4,24 @@
     box-sizing: border-box;
 }
 
+/*  conteneder del login */
+
 .container{
     background-color: #e7ddc1;
     width: 400px;
     height: 500px;
     border-radius: 15px;
-    float: right;
-    margin-right: -410px;
-    margin-top: 250px;
+    margin-left: 4%;
     padding: 20px 30px;
     box-shadow: 1px 1px 10px 1px #888888;
+    position: absolute;
+    top: 250PX;
+    
     
     
 }
 
+/*img login*/
 .container img{
     height: 80px;
     width: 80px;
@@ -25,6 +29,8 @@
     display: flex;
     margin: 0 auto;
 }
+
+/*lbl inicio secion*/
 
 .container h5{
     margin: 0;
@@ -34,6 +40,8 @@
     margin-top: 5px;
     font-size: 20px;
 }
+
+/* imputs*/
 
 
 .control{
@@ -48,6 +56,8 @@
 .control:hover{
     border: 1px solid rgb(0, 211, 248);
 }
+
+/* btn inicio secion*/
 
 .btninicio{
     background-color: rgb(4, 167, 196);
@@ -64,6 +74,8 @@
     text-decoration: none;
     color: #000;
 }
+
+/* label a olvidaste contraseña*/
 
 .container h4 a{
     text-decoration: none;
@@ -82,6 +94,7 @@
     
 }
 
+/*liniea entre boton inicio y crear*/
 .box {
 
     border: 1px solid rgb(156, 156, 156);
@@ -89,6 +102,8 @@
     margin: 0 auto;
     
   }
+
+  /* boton crear cuenta*/
 
 .btncrear{
     background-color: rgb(4, 167, 196);
@@ -107,42 +122,23 @@
     
 }
 
+/* fin del contenedor login*/
 
-@media(max-width: 800px){
-
-    .wrap{
-        display: none;
-    }
-  
-
-    .container{
-        background-color: #e7ddc1;
-        width: 400px;
-        height: 500px;
-        border-radius: 15px;
-        margin: 0 auto;
-        float: none;
-        margin-top: 200px;
-        box-shadow: 1px 1px 10px 1px #888888;
-        
-        
-    }
-}
-
-
+/*reloj*/
 
 .wrap{
     
     width:90%;
     max-width: 900px;
-    float: right;
-    margin-right: -200px;
-    margin-top: -5px; 
+    margin-left: 3%;
+    position: absolute;
+    
 }
 
 .widget{
 width: 40%;
 margin: 32px;
+position: absolute;
 
 }
 
@@ -179,3 +175,233 @@ margin: 32px;
     font-size: 2rem;
     display: block;
 }
+
+/* fin del reloj*/
+
+/*container imagenes */
+.containerimg{
+    border: 5px solid #000;
+    width: 60%;
+    height: 940PX;
+    float: right; 
+}
+
+
+.containerimg > div{
+    display: block;
+    color: aliceblue;
+    background: rgb(129, 134, 133);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.containerimg{
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.containerimg{
+    grid-template-areas: "vertical  img2 img3"
+                         "vertical horizontal horizontal"
+                         "img5 img6 img7 ";
+}
+
+
+.containerimg .vertical{
+    background-color: #ff8000;
+    grid-area: vertical;
+}
+
+.containerimg .horizontal{
+    grid-area: horizontal;
+    background-color: #0078af;
+}
+
+.containerimg .img2{
+    background-color: #c4c000;
+}
+
+.containerimg .img3{
+    background-color: #cc0000c0;
+}
+
+.containerimg .img5{
+    background-color: #a5006e;
+}
+
+.containerimg .img6{
+    background-color: #00751a;
+}
+
+.containerimg .img7{
+    background-color: #004a75;
+}
+
+/*fin del container imagenes */
+
+
+/*slider horizontal*/
+
+
+.horizontal{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    max-height: 400px;
+}
+
+.horizontal ul{
+display: flex;
+   padding: 0;
+   width: 400%;
+   animation: slide 16s infinite alternate ease-in-out;
+}
+
+.horizontal li{
+    list-style: none;
+    width: 100%;
+}
+
+.horizontal img{
+width: 200%;
+height: 200%;
+max-width: 800px;
+max-height: 400px;
+
+}
+
+@keyframes slide{
+
+    0%{margin-left: 0%;}
+    20%{margin-left: 0%;}
+
+    25%{margin-left: -100%;}
+    45%{margin-left: -100%;}
+
+    50%{margin-left: -200%;}
+    70%{margin-left: -200%;}
+
+    75%{margin-left: -300%;}
+    100%{margin-left: -300%;}
+}
+
+/*FIN*/
+
+/*img 2*/
+
+
+
+/* fin */
+.img2{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    max-height: 400px;
+}
+
+.img2 ul{
+display: flex;
+   padding: 0;
+   width: 400%;
+   animation: slide2 13s infinite alternate ease-in-out;
+}
+
+.img2 li{
+    list-style: none;
+    width: 100%;
+}
+
+.img2 img{
+width: 200%;
+height: 200%;
+max-width: 600px;
+max-height: 400px;
+
+}
+
+@keyframes slide2{
+
+    0%{margin-left: 0%;}
+    20%{margin-left: 0%;}
+
+    25%{margin-left: -100%;}
+    45%{margin-left: -100%;}
+
+    50%{margin-left: -200%;}
+    70%{margin-left: -200%;}
+
+    75%{margin-left: -300%;}
+    100%{margin-left: -300%;}
+}
+
+/* img 3*/
+
+.img3{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    max-height: 400px;
+}
+
+.img3 ul{
+display: flex;
+   padding: 0;
+   width: 400%;
+   animation: slide3 20s infinite alternate ease-in-out;
+}
+
+.img3 li{
+    list-style: none;
+    width: 100%;
+}
+
+.img3 img{
+width: 200%;
+height: 200%;
+max-width: 600px;
+max-height: 400px;
+
+}
+
+@keyframes slide3{
+
+    0%{margin-left: 0%;}
+    20%{margin-left: 0%;}
+
+    25%{margin-left: -100%;}
+    45%{margin-left: -100%;}
+
+    50%{margin-left: -200%;}
+    70%{margin-left: -200%;}
+
+    75%{margin-left: -300%;}
+    100%{margin-left: -300%;}
+}
+
+
+
+/*fin*/
+
+@media(max-width: 800px){
+
+    .wrap{
+        display: none;
+    }
+  
+
+    .container{
+        background-color: #e7ddc1;
+        width: 400px;
+        height: 500px;
+        border-radius: 15px;
+        margin: 0 auto;
+        float: none;
+        margin-top: 200px;
+        box-shadow: 1px 1px 10px 1px #888888;
+        
+        right: 100px;
+        
+    }
+}
+
+
